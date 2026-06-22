@@ -37,20 +37,25 @@
       cursor: pointer;
       font-size: 1rem;
     }
-    h2{
-            max-width: 1900px;
-      margin: 2 auto;
-      background: #121c3d;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
-      color: white;
-    }
-    .about {
-      line-height: 1.75;
-      color: lightblue;
-      font-weight: normal;
-    }
+
+    .about-section {
+    max-width: 1900px;
+    margin: 2rem auto;
+    background: #121c3d;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.about-section h2 {
+    color: white;
+    margin-top: 0;
+}
+
+.about {
+    color: lightblue;
+    line-height: 1.75;
+}
 
   </style>
 </head>
@@ -61,15 +66,24 @@
     <button id="greet">Click</button>
 
   </main>
-  <p></p>
-      <h2> 
-        Sobre mim
-    <p class="about">Cursando análise e desenvolvimento de sistemas.</p>
-    <p class="about">Atualmente estudando HTML, CSS e JavaScript.</p>
-      </h2>
+<section class="about-section">
+  <h2>Sobre mim</h2>
+
+  <p class="about">
+    Cursando Análise e Desenvolvimento de Sistemas.
+  </p>
+
+  <p class="about">
+    Atualmente estudando HTML, CSS e JavaScript.
+  </p>
+</section>
+<footer>
+  <p style="text-align: center; color: #0f172a;">&copy; 2024 Ridley. Todos os direitos reservados.</p>
+</footer>
+
   <script>
     document.getElementById('greet').addEventListener('click', function() {
-      alert('Meu nome é Ridley e estarei me esforçando para aprender o máximo possível sobre desenvolvimento web e programação. Obrigado por visitar minha página!g');
+      alert('Meu nome é Ridley e estarei me esforçando para aprender o máximo possível sobre desenvolvimento web e programação. Obrigado por visitar minha página!');
     });
   </script>
 </body>
