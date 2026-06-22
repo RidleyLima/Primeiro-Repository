@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New HTML Document</title>
+  <title>Primeiro arquivo HTML</title>
   <style>
     body {
       font-family: system-ui, sans-serif;
@@ -37,6 +37,21 @@
       cursor: pointer;
       font-size: 1rem;
     }
+    h2{
+            max-width: 1900px;
+      margin: 2 auto;
+      background: #121c3d;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+      color: white;
+    }
+    .about {
+      line-height: 1.75;
+      color: lightblue;
+      font-weight: normal;
+    }
+
   </style>
 </head>
 <body>
@@ -44,7 +59,14 @@
     <h1>Bem-vindo à minha primeira página HTML</h1>
     <p>Este é o meu primeiro arquivo HTML. Estou aprendendo a criar páginas web, JavaScript e afins.</p>
     <button id="greet">Click</button>
+
   </main>
+  <p></p>
+      <h2> 
+        Sobre mim
+    <p class="about">Cursando análise e desenvolvimento de sistemas.</p>
+    <p class="about">Atualmente estudando HTML, CSS e JavaScript.</p>
+      </h2>
   <script>
     document.getElementById('greet').addEventListener('click', function() {
       alert('Meu nome é Ridley e estarei me esforçando para aprender o máximo possível sobre desenvolvimento web e programação. Obrigado por visitar minha página!g');
